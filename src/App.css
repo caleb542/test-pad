@@ -1,0 +1,13 @@
+:root{
+  color:orangered;
+  font-family: sans-serif;
+}
+html,body{
+  padding:0;
+  margin:0;
+  overflow-x:hidden;
+}
+ol,ul {
+  list-style:none;
+  padding:0;
+}
