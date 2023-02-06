@@ -12,8 +12,12 @@ let i = feedback.length;console.log(` feedback ${i}`)
     average = average.toFixed(1).replace(/[.,]0$/, '')
   return (
     <div className="feedback-stats">
-      <h4>{feedback.length} Reviews</h4>
-      <h4>Average Rating: {isNaN(average) ? 0 : average}</h4>
+      <p>
+        <strong>{feedback.length} Reviews</strong>
+      </p>
+      <p>
+        <strong>Average rating: {isNaN(average) ? 0 : average}</strong>
+      </p>
     </div>
   )
 }

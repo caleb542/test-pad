@@ -1,0 +1,65 @@
+const MenuItems = [{
+        id: 1,
+        title: "Seared Salmon",
+        description: "Plank salmon seared in balsamic reduction",
+        price: "$19",
+        alcohol: false,
+        breakfast: false,
+        lunch: true,
+        brunch: false,
+        dinner: true,
+        appetizer: false,
+        beverage: false,
+        special: true,
+        imageUrl: './src/assets/food/salmon-squared.jpg'
+    }, {
+        id: 2,
+        title: "Classic Manhattan",
+        description: "Rye, vermouth",
+        price: "$10",
+        alcohol: true,
+        breakfast: false,
+        lunch: false,
+        brunch: true,
+        dinner: false,
+        appetizer: false,
+        beverage: true,
+        special: false,
+        imageUrl: 'linear-gradient(90deg,#f100df,#aaf111)',
+        imageUrl: './src/assets/food/drink1.jpg'
+    },
+    {
+        id: 3,
+        title: "Linguine with Shrimo and Scallops",
+        description: "White sauce,cabernet blanc, top tier seafood ",
+        price: "$17",
+        alcohol: false,
+        breakfast: false,
+        lunch: true,
+        brunch: true,
+        dinner: true,
+        appetizer: false,
+        beverage: false,
+        special: true,
+        imageUrl: 'linear-gradient(90deg,#f100df,#aaf111)',
+        imageUrl: './src/assets/food/linguine.jpg'
+    },
+    {
+        id: 4,
+        title: "Gniochi Gnudi",
+        description: "A combination of Gniochi and Gnudi - potato gniochi mixed with riccotta cheese",
+        price: "$17",
+        alcohol: false,
+        breakfast: false,
+        lunch: true,
+        brunch: true,
+        dinner: true,
+        appetizer: false,
+        beverage: false,
+        special: true,
+        imageUrl: 'linear-gradient(90deg,#f100df,#aaf111)',
+        imageUrl: './src/assets/food/gniochi.jpg'
+    }
+]
+
+export default MenuItems

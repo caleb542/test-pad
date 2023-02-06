@@ -55,11 +55,11 @@ function Ratings() {
 
     }
     return (
-        <div className='show-ratings'>
+        <div className='show-ratings container'>
             
             <div className="wrapper">
             <header>
-                <h1>Ratings & Feedback</h1>
+                <h2>Ratings & Feedback</h2>
             </header>
                 <FeedbackForm handleAdd={addFeedback}/>
             </div>

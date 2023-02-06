@@ -1,7 +1,7 @@
 import FeedbackItem from "./FeedbackItem"
 import Card from "./shared/Card"
 
-function FeedbackList({ feedback, handleDelete, setFeedback }) {
+function FeedbackList({ feedback, handleDelete, setFeedback, sorry }) {
 
   // If empty return some info about being empty
   
@@ -9,7 +9,7 @@ function FeedbackList({ feedback, handleDelete, setFeedback }) {
 
     const fbk = JSON.parse(localStorage.getItem('localfeedback'))
      if ( !fbk || fbk.length === 0) {
-      return (<Card>Sorry, No feedback yet.</Card>)
+      return (<Card sorry={true}>Sorry, There hasn't been any feedback.</Card>)
      } else {
       // setFeedback(fbk)
      }  

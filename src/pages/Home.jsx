@@ -3,26 +3,29 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 import Button from '../components/Button'
 import Effect from '../components/Effect'
-function Home({ title }) {
+import Hero from '../components/Hero'
+function Home({ title, background }) {
 
     const [count, setCount] = useState(0)
 
   return (
-    <div className='landing'>
-        <header><h1>L{count}VE</h1></header>
-        <div className="card">
-            <h1>{title}</h1>
-            <Button text="Count" count={count} setCount={setCount} />
+   
+        <header>
+            <Hero background='url(./src/assets/food/friends.jpg)'>
+            <div className="container">
+              <h1>{title}</h1>
+            </div>
+         
+            </Hero>
+        </header>
 
-        </div>
-        <Effect count={count}/>
-       
-    </div>
+
+    
   )
 }
 
 Home.defaultProps = {
-    title:"Home - Welcome"
+    title:"Welcome! You are"
 }
 
 Home.propTypes = {

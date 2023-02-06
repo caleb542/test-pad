@@ -2,7 +2,7 @@ import React from 'react'
 
 function Copy() {
   return (
-    <div><p>&copy;&nbsp;2023 All rights reserved</p></div>
+   <p>&copy;2023 CH All rights reserved</p>
   )
 }
 

@@ -17,7 +17,7 @@ function RatingSelect({select}) {
                     name="rating" 
                     id="num1"
                     value="1"
-                    onClick={handleChange} 
+                    onChange={handleChange} 
                     checked={selected === 1}
             />
                 <label  htmlFor='num1'>1</label>

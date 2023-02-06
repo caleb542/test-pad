@@ -6,23 +6,38 @@ import Logo from './Logo'
 function Nav() {
   return (
     <nav className='navigation'>
-    <motion.div
-    whileHover={{ scale: .90 }}
-> <Logo /> </motion.div>    
+  <Logo />  
         <ul>
         
             <li>
-            <motion.div
-            whileHover={{ scale: .90 }}>
+            <motion.button
+            whileTap={{ scale: .80 }}>
                 <NavLink to='/'  activeclassname="active" className=''>Home</NavLink>
-            </motion.div>
+            </motion.button>
             </li>
-           
             <li>
-            <motion.div
-            whileHover={{ scale: .90 }}>
+            <motion.button
+            whileTap={{ scale: .80 }}>
+                <NavLink to='/menu'  activeclassname="active" className=''>Menu</NavLink>
+            </motion.button>
+            </li>
+            <li>
+            <motion.button
+            whileTap={{ scale: .80 }}>
                 <NavLink to='/ratings'  activeclassname="active" className=''>Ratings</NavLink>
-            </motion.div>        
+            </motion.button>        
+            </li>
+            <li>
+            <motion.button
+            whileTap={{ scale: .80 }}>
+                <NavLink to='/info'  activeclassname="active" className=''>Info</NavLink>
+            </motion.button>        
+            </li>
+            <li>
+            <motion.button
+            whileTap={{ scale: .80 }}>
+                <NavLink to='/counter'  activeclassname="active" className=''>Counter</NavLink>
+            </motion.button>        
             </li>
         </ul>
     </nav>    

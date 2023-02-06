@@ -5,6 +5,9 @@ import reactLogo from './assets/react.svg'
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import Ratings from './pages/Ratings'
+import Menu from './pages/Menu'
+import Info from './pages/Info'
+import Counter from './pages/Counter'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -19,12 +22,15 @@ function App() {
         <Nav/> 
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/menu' element={<Menu />} />
           <Route path='/ratings' element={<Ratings />} />
+          <Route path='/info' element={<Info />} />
+          <Route path='/counter' element={<Counter />} />
         </Routes>
       </Router> 
     </div>
 
-    <Footer  title="CH "/>
+    <Footer />
 
   </div>
   </>)

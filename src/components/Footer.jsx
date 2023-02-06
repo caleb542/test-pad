@@ -1,6 +1,6 @@
 import Copy from './Copy'
 
-function Footer( {title, bg, c}) {
+function Footer( {title, bg, c} ) {
 
     const styles = {
         title:title,
@@ -9,15 +9,17 @@ function Footer( {title, bg, c}) {
     }
 
   return (
-    <footer style={styles}>
+    <footer>
+      <div>
         <p><strong>{title}</strong></p>
-        <div><Copy/></div>
+        <Copy/></div>
+      
     </footer>
   )
 }
 
 Footer.defaultProps = {
-    title: 'CLICKY COUNTESS',
+    title: 'CH',
     bg: 'rgba(0,0,0,1)',
     c:'#ffff00'
 }
